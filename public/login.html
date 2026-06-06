@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+
+    <link rel="icon" type="image/png" href="/icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+
+    <div class="navbar">
+  <div class="logo"><img src="/icon.png" alt="ShopEasy" style="width:40px; height:40px; object-fit:contain; vertical-align:middle; margin-right:8px;">
+  ShopEasy
+</div>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/cart">Cart 🛒</a>
+    <a href="/orders">Orders</a>
+    <div class="profile-dropdown">
+      <button class="profile-btn">👤 Profile</button>
+      <div class="dropdown-menu">
+        <a href="/profile">My Profile</a>
+        <a href="/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="auth-container">
+      <h2>Welcome Back!</h2>
+      <form action="/login" method="POST" autocomplete="off">
+        <input type="email" name="email" placeholder="Email" autocomplete="off"><br>
+        <input type="password" name="password" placeholder="Password" autocomplete="off"><br>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="/register">Register here</a></p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
