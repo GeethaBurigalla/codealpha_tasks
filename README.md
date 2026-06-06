@@ -1,9 +1,9 @@
 # CodeAlpha Internship Tasks
 
-**Name:** Burigalla Geetha
-**Student ID:** CA/DF1/110980
-**Domain:** Full Stack Development
-**Duration:** 1st June 2026 to 30th June 2026
+**Name:** Burigalla Geetha       
+**Student ID:** CA/DF1/110980         
+**Domain:** Full Stack Development      
+**Duration:** 1st June 2026 to 30th June 2026      
 
 ---
 
