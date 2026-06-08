@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User - SocialApp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">📱 SocialApp</div>
+    <div class="nav-links">
+      <a href="/">🏠 Feed</a>
+      <a href="/profile">👤 Profile</a>
+      <a href="/logout">🚪 Logout</a>
+      <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div id="userProfile"></div>
+    <h3>Posts</h3>
+    <div id="userPosts"></div>
+  </div>
+
+  <script src="js/user.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>

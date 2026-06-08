@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - SocialApp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">📱 SocialApp</div>
+    <div class="nav-links">
+      <a href="/">🏠 Feed</a>
+      <a href="/notifications">🔔 Notifications</a>
+      <a href="/profile">👤 Profile</a>
+      <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+      <a href="/logout">🚪 Logout</a>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div id="profileData"></div>
+
+    <!-- Edit Profile Form -->
+    <div class="edit-profile-box" id="editBox" style="display:none;">
+      <h3>Edit Profile</h3>
+      <input type="text" id="editName" placeholder="Your name">
+      <input type="text" id="editBio" placeholder="Your bio">
+      <button class="btn" onclick="saveProfile()">Save</button>
+      <button class="btn" style="background:#888;margin-top:8px;" onclick="toggleEdit()">Cancel</button>
+    </div>
+
+    <h3 style="margin:20px 0 10px;">My Posts</h3>
+    <div id="myPosts"></div>
+  </div>
+
+  <script src="js/profile.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>

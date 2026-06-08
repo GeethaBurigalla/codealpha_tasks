@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - SocialApp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">📱 SocialApp</div>
+    <div class="nav-links">
+      <a href="/">🏠 Feed</a>
+      <a href="/notifications">🔔 Notifications</a>
+      <a href="/profile">👤 Profile</a>
+      <a href="/logout">🚪 Logout</a>
+      <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <h2 style="margin-bottom:20px;">🔔 Notifications</h2>
+    <div id="notificationsList"></div>
+  </div>
+
+  <script src="js/notifications.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>

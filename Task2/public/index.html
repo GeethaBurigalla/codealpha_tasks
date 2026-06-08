@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialApp - Feed</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">📱 SocialApp</div>
+    <div class="nav-links">
+      <a href="/">🏠 Feed</a>
+      <a href="/notifications">🔔 Notifications</a>
+      <a href="/profile">👤 Profile</a>
+      <a href="/logout">🚪 Logout</a>
+      <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+    </div>
+  </div>
+
+  <div class="main-container">
+
+    <!-- Search Users -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Search users..." 
+        onkeyup="searchUsers()"
+        class="search-input"
+      >
+      <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <!-- Create Post -->
+    <div class="create-post">
+      <h3>Create Post</h3>
+      <textarea id="postText" placeholder="What's on your mind?"></textarea>
+      <div id="imagePreview" class="image-preview"></div>
+      <input type="file" id="postImage" accept="image/*" onchange="previewImage(this)">
+      <button class="btn" onclick="createPost()">Post</button>
+    </div>
+
+    <!-- Feed -->
+    <div id="feed"></div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>
