@@ -76,9 +76,30 @@ Task2/
 
 ## Task 3 - Project Management Tool 📋
 
-*Coming soon...*
+A real-time project management application.
 
----
+### Features
+- User Registration & Login
+- Create & manage Projects
+- Add, update & delete Tasks within projects
+- Real-time updates with Socket.io
+- Assign tasks to team members
+- Track task status (To Do / In Progress / Done)
 
+### Tech Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB Atlas
+- **Real-time:** Socket.io
+
+### Folder Structure
+```
+Task3/
+├── models/          # Mongoose models (User, Project, Task)
+├── public/          # Frontend (HTML, CSS, JS)
+├── server.js        # Express server & Socket.io
+├── package.json
+└── package-lock.json
+```
 
 Built with ❤️ using Node.js, Express & MongoDB
